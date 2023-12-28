@@ -9,6 +9,7 @@ import java.util.TreeMap;
 import domain.algorithms.Algo2;
 import domain.algorithms.Constant;
 import domain.algorithms.CoopForCoop;
+import domain.algorithms.GenerousTFT;
 import domain.algorithms.GoodToBad;
 import domain.algorithms.RandomMove;
 import domain.algorithms.TitForTat;
@@ -29,6 +30,7 @@ public class Tournament
         competitor.add(new GoodToBad()); 
         competitor.add(new Algo2());
         competitor.add(new CoopForCoop());
+        competitor.add(new GenerousTFT());
 
         // Initializing result map
         Map<String, Integer> resultTable = new HashMap<>();
