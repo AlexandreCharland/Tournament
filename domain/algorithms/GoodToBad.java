@@ -3,14 +3,14 @@ import java.util.Random;
 
 import domain.logic.Strategy;
 
-public class CounterTitForTat extends Strategy {
+public class GoodToBad extends Strategy {
     Random rand = new Random();
     byte nextAction = 0;
-    int numForSetDeflect = rand.nextInt(100);
+    int numForSetDeflect = rand.nextInt(70);
     int actualRound = 0;
     boolean setDeflect = false;
 
-    public CounterTitForTat()
+    public GoodToBad()
     {
         
     }
@@ -39,6 +39,6 @@ public class CounterTitForTat extends Strategy {
     }
     public String Name()
     {
-        return "CounterTitForTat";
+        return "GoodToBad";
     }
 }

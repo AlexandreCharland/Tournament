@@ -6,8 +6,10 @@ import java.util.Map;
 import java.util.Random;
 import java.util.TreeMap;
 
+import domain.algorithms.Algo2;
 import domain.algorithms.Constant;
-import domain.algorithms.CounterTitForTat;
+import domain.algorithms.CoopForCoop;
+import domain.algorithms.GoodToBad;
 import domain.algorithms.RandomMove;
 import domain.algorithms.TitForTat;
 
@@ -20,9 +22,13 @@ public class Tournament
         Random rand = new Random();
         int numberOfRounds = 195 + rand.nextInt(11);
         ArrayList<Strategy> competitor = new ArrayList<Strategy>();
-        competitor.add(new Constant((byte)0, "Coop")); competitor.add(new RandomMove());
-        competitor.add(new Constant((byte)1, "Selfish")); competitor.add(new TitForTat());
-        competitor.add(new CounterTitForTat());
+        competitor.add(new Constant((byte)0, "Coop")); 
+        competitor.add(new Constant((byte)1, "Selfish"));
+        competitor.add(new TitForTat());
+        competitor.add(new RandomMove());
+        competitor.add(new GoodToBad()); 
+        competitor.add(new Algo2());
+        competitor.add(new CoopForCoop());
 
         // Initializing result map
         Map<String, Integer> resultTable = new HashMap<>();
