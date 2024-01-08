@@ -10,10 +10,6 @@ public class GoodToBad extends Strategy {
     int actualRound = 0;
     boolean setDeflect = false;
 
-    public GoodToBad()
-    {
-        
-    }
     public byte Action(byte previousMove)
     {
         if(previousMove != 2)
@@ -33,12 +29,14 @@ public class GoodToBad extends Strategy {
         actualRound++;
         return nextAction;
     }
-    public void Reset()
-    {
-        nextAction = 0;
-    }
+    
     public String Name()
     {
         return "GoodToBad";
+    }
+    
+    @Override
+    public Strategy Duplicate() {
+        return new GoodToBad();
     }
 }

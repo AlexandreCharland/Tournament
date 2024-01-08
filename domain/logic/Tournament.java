@@ -18,8 +18,10 @@ public class Tournament
         Random rand = new Random();
         int numberOfRounds = 195 + rand.nextInt(11);
         ArrayList<Strategy> competitor = new ArrayList<Strategy>();
-        competitor.add(new Constant((byte)0, "Coop")); competitor.add(new RandomMove(rand));
-        competitor.add(new Constant((byte)1, "Selfish")); competitor.add(new TitForTat());
+        competitor.add(new Constant((byte)0, "Coop"));
+        competitor.add(new RandomMove(rand));
+        competitor.add(new Constant((byte)1, "Selfish")); 
+        competitor.add(new TitForTat());
         competitor.add(new GenerousTFT());
         
         // Initializing result map
