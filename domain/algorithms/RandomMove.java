@@ -1,7 +1,5 @@
-package domain.algorithms;
-import java.util.Random;
 
-import domain.logic.Strategy;
+import java.util.Random;
 public final class RandomMove extends Strategy
 {
     Random rand;

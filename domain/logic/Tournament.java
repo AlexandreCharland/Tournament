@@ -1,35 +1,42 @@
-package domain.logic;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-import domain.algorithms.*;
 
 import java.util.List;
 public class Tournament
 {
     public static void main(String[] args)
     {
-        Random rand = new Random();
+        /*Random rand = new Random();
         int numberOfRounds = 195 + rand.nextInt(11);
         ArrayList<Strategy> competitor = new ArrayList<Strategy>();
-        competitor.add(new Constant((byte)0, "Coop")); //competitor.add(new RandomMove(rand));
-        competitor.add(new Constant((byte)1, "Selfish")); competitor.add(new TitForTat());
-        //competitor.add(new GenerousTFT());
-        //competitor.add(new And());
-        //competitor.add(new exp_algo());
-        //competitor.add(new gauss_algo());
+        competitor.add(new RandomMove(rand));
+        competitor.add(new GenerousTFT());
+        competitor.add(new exp_algo());
+        competitor.add(new gauss_algo());
         competitor.add(new GoodToBad());
-        //competitor.add(new ImpLR());
-        //competitor.add(new Jerk());
-        //competitor.add(new NastyThreeMove());
-        //competitor.add(new NiceThreeMove());
-        //competitor.add(new Or());
+        competitor.add(new NastyThreeMove());
+        competitor.add(new NiceThreeMove());
+        */
+        Random rand = new Random();
+        int numberOfRounds = 195;// + rand.nextInt(11);
+        ArrayList<Strategy> competitor = new ArrayList<Strategy>();
+        competitor.add(new Brain(new byte[] {0}, "Coop"));
+        competitor.add(new Brain(new byte[] {1}, "Jerk"));
+        competitor.add(new Brain(new byte[] {0,1}, "TitForTat"));
+        competitor.add(new Brain(new byte[] {1,0}, "Negation"));
+        competitor.add(new Brain(new byte[] {0,0,0,1}, "And"));
+        competitor.add(new Brain(new byte[] {0,1,1,0}, "Xor"));
+        competitor.add(new Brain(new byte[] {0,1,1,1}, "Or"));
+        competitor.add(new Brain(new byte[] {1,0,0,1}, "sSi"));
+        competitor.add(new Brain(new byte[] {1,0,1,1}, "Impl"));
+        competitor.add(new Brain(new byte[] {1,1,0,1}, "Impr"));
         competitor.add(new SmarterThreeMove());
-        //competitor.add(new sSi());
-        //competitor.add(new XOR());
+        
         
         // Initializing result map
         Map<String, Integer> resultTable = new HashMap<>();

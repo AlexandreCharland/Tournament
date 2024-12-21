@@ -1,6 +1,5 @@
 //Samir
-package domain.algorithms;
-import domain.logic.Strategy;
+
 import java.util.Random;
 
 public class exp_algo extends Strategy {

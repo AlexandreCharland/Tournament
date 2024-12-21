@@ -1,7 +1,5 @@
-package domain.algorithms;
-import java.util.LinkedList;
 
-import domain.logic.Strategy;
+import java.util.LinkedList;
 public class SmarterThreeMove extends Strategy
 {
     Boolean myself;

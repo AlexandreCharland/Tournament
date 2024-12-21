@@ -1,5 +1,4 @@
-package domain.algorithms;
-import domain.logic.Strategy;
+
 import java.util.Random;
 
 public class gauss_algo extends Strategy {

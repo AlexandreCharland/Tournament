@@ -1,4 +1,4 @@
-package domain.logic;
+
 
 public abstract class Strategy
 {

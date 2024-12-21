@@ -1,8 +1,7 @@
 //Samir
-package domain.algorithms;
+
 import java.util.Random;
 
-import domain.logic.Strategy;
 
 public class GoodToBad extends Strategy {
     Random rand = new Random();

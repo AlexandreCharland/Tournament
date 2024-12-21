@@ -1,6 +1,4 @@
-package domain.algorithms;
 
-import domain.logic.Strategy;
 
 public class GenerousTFT extends Strategy {
 
