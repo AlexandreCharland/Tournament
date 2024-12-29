@@ -1,5 +1,6 @@
-
+package algorithms;
 import java.util.LinkedList;
+import logic.Strategy;
 public class SmarterThreeMove extends Strategy
 {
     Boolean myself;

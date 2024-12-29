@@ -1,5 +1,6 @@
-
+package algorithms;
 import java.util.Random;
+import logic.Strategy;
 public final class RandomMove extends Strategy
 {
     Random rand;

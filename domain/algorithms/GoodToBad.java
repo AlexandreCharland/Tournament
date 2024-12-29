@@ -1,7 +1,7 @@
 //Samir
-
+package algorithms;
 import java.util.Random;
-
+import logic.Strategy;
 
 public class GoodToBad extends Strategy {
     Random rand = new Random();

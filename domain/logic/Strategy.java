@@ -1,4 +1,4 @@
-
+package logic;
 
 public abstract class Strategy
 {

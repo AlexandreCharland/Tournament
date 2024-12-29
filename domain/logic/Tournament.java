@@ -1,10 +1,10 @@
-
+package logic;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
-
+import algorithms.*;
 
 import java.util.List;
 public class Tournament

@@ -1,6 +1,6 @@
-
+package algorithms;
 import java.util.Random;
-
+import logic.Strategy;
 public class gauss_algo extends Strategy {
 
     private int normalDist(double mean, double stdv) {

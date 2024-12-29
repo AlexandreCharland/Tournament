@@ -1,5 +1,5 @@
-
-
+package algorithms;
+import logic.Strategy;
 public class GenerousTFT extends Strategy {
 
     private final double FORGIVENESS_PROBABILITY = 0.1; // 10% because it was the number said in the video

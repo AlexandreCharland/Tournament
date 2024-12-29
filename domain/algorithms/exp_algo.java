@@ -1,5 +1,6 @@
 //Samir
-
+package algorithms;
+import logic.Strategy;
 import java.util.Random;
 
 public class exp_algo extends Strategy {

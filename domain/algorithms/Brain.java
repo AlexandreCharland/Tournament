@@ -1,3 +1,5 @@
+package algorithms;
+import logic.Strategy;
 public final class Brain extends Strategy
 {
     byte[] brain;
